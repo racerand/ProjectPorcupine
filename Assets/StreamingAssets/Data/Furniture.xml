@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Furnitures>
-    <Furniture objectType="furn_SteelWall">
-        <Name>Basic Wall</Name>
+    <Furniture objectType="steel_wall">
+        <Name>Steel Wall</Name>
         <Description>This is a basic wall.</Description>
         <TypeTag>Wall</TypeTag>
         <MovementCost>0</MovementCost>
@@ -19,13 +19,10 @@
         <DeconstructJob>
             <Inventory objectType="Steel Plate" amount="3" />
         </DeconstructJob>
-        
-        <LocalizationCode>furn_steel_wall</LocalizationCode>
-        <UnlocalizedDescription>furn_steel_wall_desc</UnlocalizedDescription>
 
     </Furniture>
 
-    <Furniture objectType="Door">
+    <Furniture objectType="door">
         <Name>Door</Name>
         <Description>A door that characters can walk through.</Description>
         <TypeTag>Door</TypeTag>
@@ -55,12 +52,9 @@
 
         <IsEnterable FunctionName="IsEnterable_Door" />
 
-        <LocalizationCode>furn_door</LocalizationCode>
-        <UnlocalizedDescription>furn_door_desc</UnlocalizedDescription>
-
     </Furniture>
 
-    <Furniture objectType="Airlock">
+    <Furniture objectType="airlock">
         <Name>Door</Name>
         <TypeTag>Door</TypeTag>
         <Description>An Airlock prevents air from leaving the base</Description>
@@ -91,13 +85,10 @@
 
         <IsEnterable FunctionName="IsEnterable_Door" />
 
-        <LocalizationCode>furn_airlock</LocalizationCode>
-        <UnlocalizedDescription>furn_airlock_desc</UnlocalizedDescription>
-
     </Furniture>
 
 
-    <Furniture objectType="Stockpile">
+    <Furniture objectType="stockpile">
         <Name>Stockpile</Name>
         <Description>Characters will brings inventory here for storage.</Description>
         <TypeTag>Storage</TypeTag>
@@ -109,11 +100,9 @@
 
         <OnUpdate FunctionName="Stockpile_UpdateAction" />
         
-        <LocalizationCode>furn_stockpile</LocalizationCode>
-        <UnlocalizedDescription>furn_stockpile_desc</UnlocalizedDescription>
     </Furniture>
 
-    <Furniture objectType="Oxygen Generator">
+    <Furniture objectType="oxygen_generator">
         <Name>Oxygen Generator</Name>
         <Description>Create O2 in the room in which it is built.</Description>
         <TypeTag>Generator</TypeTag>
@@ -132,14 +121,11 @@
             <Param name="gas_limit" value="0.2" />
             <Param name="gas_per_second" value="0.01" />
         </Params>
-
-        <LocalizationCode>furn_oxygen_generator</LocalizationCode>
-        <UnlocalizedDescription>furn_oxygen_generator_desc</UnlocalizedDescription>
         
     </Furniture>
 
 
-    <Furniture objectType="Mining Drone Station">
+    <Furniture objectType="mining_drone_station">
         <Name>Mining Drone Station</Name>
         <Description>Creates Steel Plates when worked by a character.</Description>
         <TypeTag>Workstation</TypeTag>
@@ -154,14 +140,11 @@
         <JobSpawnSpotOffset X="0" Y="0" />
 
         <OnUpdate FunctionName="MiningDroneStation_UpdateAction" />
-        
-        <LocalizationCode>furn_mining_drone_station</LocalizationCode>
-        <UnlocalizedDescription>furn_mining_drone_station_desc</UnlocalizedDescription>
 
     </Furniture>
 
 
-    <Furniture objectType="Power Generator">
+    <Furniture objectType="power_generator">
     <Name>Power Generator</Name>
     <TypeTag>Generator</TypeTag>
     <MovementCost>10</MovementCost>
@@ -172,12 +155,8 @@
       <BuildingJob jobTime="0">
       </BuildingJob>
 
-	
-      <LocalizationCode>furn_power_generator</LocalizationCode>
-      <UnlocalizedDescription>furn_power_generator_desc</UnlocalizedDescription>
-
   </Furniture>
-  <Furniture objectType="Cloning Pod">
+  <Furniture objectType="cloning_pod">
 	<Name>Cloning Pod</Name>
 	<Description>Creates an additional worker, then is destroyed.</Description>
         <MovementCost>50</MovementCost>
@@ -199,7 +178,7 @@
 	<LocalizationCode>furn_cloning_pod</LocalizationCode>
 	<UnlocalizedDescription>furn_cloning_pod_desc</UnlocalizedDescription>
   </Furniture>
-  <Furniture objectType="Metal Smelter">
+  <Furniture objectType="metal_smelter">
       <Name>Metal Smelter</Name>
       <TypeTag>Processor</TypeTag>
       <Description>Smelts your raw iron into metal.</Description>
@@ -215,12 +194,9 @@
           <Param name="smelttime" value="0" />
           <Param name="smelttime_required" value="6" />
       </Params>
-
-      <LocalizationCode>furn_metal_smelter</LocalizationCode>
-      <UnlocalizedDescription>furn_metal_smelter_desc</UnlocalizedDescription>
   </Furniture>
 
-  <Furniture objectType="Small Landing Pad">
+  <Furniture objectType="small_landing_pad">
     <Name>Small Landing Pad</Name>
     <Description>A landing pad for small spaceboats to land.</Description>
     <OnUpdate FunctionName="LandingPad_Temp_UpdateAction" />
@@ -242,8 +218,6 @@
       <Param name="tradeinamount" value="10" />
       <Param name="tradeoutamount" value="15" />
     </Params>
-    <LocalizationCode>furn_small_landing_pad</LocalizationCode>
-    <UnlocalizedDescription>furn_small_landing_pad_desc</UnlocalizedDescription>
   </Furniture>
 
 </Furnitures>

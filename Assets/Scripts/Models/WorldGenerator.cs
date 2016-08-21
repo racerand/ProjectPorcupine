@@ -84,11 +84,11 @@ public class WorldGenerator
                 {
                     if (x == 0 && y == -startAreaSize)
                     {
-                        world.PlaceFurniture("Door", t, true);
+                        world.PlaceFurniture("door", t, true);
                         continue;
                     }
 
-                    world.PlaceFurniture("furn_SteelWall", t, true);
+                    world.PlaceFurniture("steel_wall", t, true);
                 }
             }
         }

@@ -725,12 +725,12 @@ public class Furniture : IXmlSerializable, ISelectable
 
     public string GetName()
     {
-        return localizationCode;//this.Name;
+        return "furn_" + this.objectType;
     }
 
     public string GetDescription()
     {
-        return unlocalizedDescription;
+        return GetName() + "_desc";
     }
 
     public string GetHitPointString()
