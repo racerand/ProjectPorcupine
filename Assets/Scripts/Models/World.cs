@@ -516,7 +516,7 @@ public class World : IXmlSerializable
 
         // DEBUGGING ONLY!  REMOVE ME LATER!
         // Create an Inventory Item
-        Inventory inv = new Inventory("steel_plate", 50, 50);
+        Inventory inv = new Inventory("plate_steel", 50, 50);
         Tile t = GetTileAt(Width / 2, Height / 2);
         inventoryManager.PlaceInventory(t, inv);
         if (cbInventoryCreated != null)
@@ -524,7 +524,7 @@ public class World : IXmlSerializable
             cbInventoryCreated(t.inventory);
         }
 
-        inv = new Inventory("steel_plate", 50, 4);
+        inv = new Inventory("plate_steel", 50, 4);
         t = GetTileAt(Width / 2 + 2, Height / 2);
         inventoryManager.PlaceInventory(t, inv);
         if (cbInventoryCreated != null)
@@ -532,7 +532,7 @@ public class World : IXmlSerializable
             cbInventoryCreated(t.inventory);
         }
 
-        inv = new Inventory("copper_wire", 50, 3);
+        inv = new Inventory("wire_copper", 50, 3);
         t = GetTileAt(Width / 2 + 1, Height / 2 + 2);
         inventoryManager.PlaceInventory(t, inv);
         if (cbInventoryCreated != null)

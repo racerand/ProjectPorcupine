@@ -88,7 +88,7 @@ public class WorldGenerator
                         continue;
                     }
 
-                    world.PlaceFurniture("steel_wall", t, true);
+                    world.PlaceFurniture("wall_steel", t, true);
                 }
             }
         }

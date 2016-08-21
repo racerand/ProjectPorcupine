@@ -22,7 +22,7 @@ using MoonSharp.Interpreter;
 [MoonSharpUserData]
 public class Inventory : IXmlSerializable, ISelectable
 {
-    public string objectType = "steel_plate";
+    public string objectType = "plate_steel";
     public int maxStackSize = 50;
     public float basePrice = 1f;
 
